@@ -18,6 +18,11 @@ phases:
       - docker push $REPOSITORY_URI:$IMAGE_TAG
       - echo Writing image definitions file...
       - printf '[{"name":"nodejs-docker","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
+artifacts:
+    files: 
+      - imagedefinitions.json
+      - appspec.yaml
+      - taskdef.json
 cache:
     paths:
       - ~/.npm
