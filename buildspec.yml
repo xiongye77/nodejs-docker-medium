@@ -6,6 +6,7 @@ phases:
       - IMAGE_TAG=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
       - npm install
       - $(aws ecr get-login --no-include-email --region $AWS_REGION)
+      - REPOSITORY_URI=207880003428.dkr.ecr.ap-south-1.amazonaws.com/nodejs-docker-medium
   build:
     commands:
       - echo Building application
