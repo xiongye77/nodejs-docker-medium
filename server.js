@@ -1,9 +1,9 @@
-const express = require('express')
-const app = express();
-// Constants
-const PORT = 8080;
-const HOST = '0.0.0.0';
-app.get('/healthcheck', (req, res) => res.status(200).json({status: 'ok'}));
-app.get('/version', (req, res) => res.status(200).json({status: 'Version 1'}));
-app.listen(PORT, HOST);
-console.log(`Running on http://${HOST}:${PORT}`);
+var http = require('http');
+var handleRequest = function (request, response) {
+  response.writeHead(200);
+  
+  response.end('Hello from Node Server App deployed on ECS Fargate with CodePipeline!V2');
+  
+};
+var www = http.createServer(handleRequest);
+www.listen(80);
