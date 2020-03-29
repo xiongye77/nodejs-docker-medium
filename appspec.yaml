@@ -5,7 +5,7 @@ Resources:
       Properties:
         TaskDefinition: <TASK_DEFINITION>
         LoadBalancerInfo:
-          ContainerName: "SampleApplicationName"
+          ContainerName: "sample-fargate-app"
           ContainerPort: 80
 # Optional properties
         PlatformVersion: "LATEST"
