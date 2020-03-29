@@ -5,9 +5,9 @@
          "logConfiguration": { 
             "logDriver": "awslogs",
             "options": { 
-               "awslogs-group" : "/ecs/fargate-task-definition",
+               "awslogs-group" : "ecs-linear-blog-loggroup-svc",
                "awslogs-region": "ap-south-1",
-               "awslogs-stream-prefix": "ecs"
+               "awslogs-stream-prefix": "ecs-linear-blog-svc"
             }
          },
          "name": "sample-fargate-app",
