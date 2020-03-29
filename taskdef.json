@@ -1,7 +1,7 @@
 {
    "containerDefinitions": [ 
       { 
-         "image": "207880003428.dkr.ecr.ap-south-1.amazonaws.com/ecs-sample-app:v1",
+         "image": "<IMAGE1_NAME>",
          "logConfiguration": { 
             "logDriver": "awslogs",
             "options": { 
