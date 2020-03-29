@@ -9,7 +9,7 @@
             "-c"
          ],
          "essential": true,
-         "image": "207880003428.dkr.ecr.ap-south-1.amazonaws.com/demo:d9208094352e2424d5678e82dbabe33d9c776b59",
+         "image": "207880003428.dkr.ecr.ap-south-1.amazonaws.com/ecs-sample-app:v1",
          "logConfiguration": { 
             "logDriver": "awslogs",
             "options": { 
