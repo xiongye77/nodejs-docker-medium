@@ -9,7 +9,7 @@
             "-c"
          ],
          "essential": true,
-         "image": "<IMAGE1_NAME>",
+         "image": "207880003428.dkr.ecr.ap-south-1.amazonaws.com/nodejs-docker-medium:f974769",
          "logConfiguration": { 
             "logDriver": "awslogs",
             "options": { 
